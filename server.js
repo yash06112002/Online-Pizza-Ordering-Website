@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // app.use(expressLayout);
+app.use(express.static('public'));
 app.set('views', path.join(__dirname, '/resources/views'));
 app.set('view engine', 'ejs');
 
